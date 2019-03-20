@@ -40,4 +40,6 @@ app.post("/postreceive", (req, res) => {
   }
 });
 
+app.disable("x-powered-by");
+
 app.listen(48080);
