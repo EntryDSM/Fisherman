@@ -30,6 +30,8 @@ app.post("/postreceive", (req, res) => {
   const { name } = event.repository;
 
   if (name in DOCS_LIST) {
+    sh.cd(`/home/entrydsm/docs/doc-source/${name}`);
+    sh.exec("git pull");
     sh.cd("/home/entrydsm/docs/");
     sh.cp("-r", `./doc-source/${name}/docs/source`, `./${name}/source`);
     res.send("Good Request").status(200);
