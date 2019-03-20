@@ -11,7 +11,6 @@ interface IGithubRepository {
   name: string;
 }
 
-const GITHUB_SECRET = process.env.GITHUB_SECRET;
 const DOCS_LIST = {
   Hermes: 4570,
   "Louis-Vuitton": 4571,
@@ -39,4 +38,4 @@ app.post("/postreceive", (req, res) => {
   }
 });
 
-app.listen(8080);
+app.listen(48080);
