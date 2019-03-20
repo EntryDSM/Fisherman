@@ -30,6 +30,7 @@ app.post("/postreceive", (req, res) => {
   const { name } = event.repository;
 
   if (name in DOCS_LIST) {
+    console.info("[INFO] Repository " + name + " is updating...");
     sh.cd(`/home/entrydsm/docs/doc-source/${name}`);
     sh.exec("git pull");
     sh.cd("/home/entrydsm/docs/");
