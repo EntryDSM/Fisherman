@@ -34,7 +34,7 @@ app.post("/postreceive", (req, res) => {
     sh.cd(`/home/entrydsm/docs/doc-source/${name}`);
     sh.exec("git pull");
     sh.cd("/home/entrydsm/docs/");
-    sh.cp("-r", `./doc-source/${name}/docs/source`, `./${name}/source`);
+    sh.cp("-r", `./doc-source/${name}/docs/source/.`, `./${name}/source`);
     res.send("Good Request").status(200);
   } else {
     res.send("Bad Request").status(400);
