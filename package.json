@@ -1,0 +1,19 @@
+{
+  "name": "fisherman",
+  "version": "1.0.0",
+  "description": "EntryDSM Webhook server for Documentations",
+  "main": "dist/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EntryDSM/Fisherman.git"
+  },
+  "author": "HubCodes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EntryDSM/Fisherman/issues"
+  },
+  "homepage": "https://github.com/EntryDSM/Fisherman#readme"
+}
